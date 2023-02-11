@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <!--#4 Page Title, shows in browser as the tab name-->
+    <!--Page Title, shows in browser as the tab name-->
     <title>Matt's Moving Planner!</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,24 +19,44 @@
 <body>
     <div data-role="page">
 
+        <!--#2 Header-->
         <div data-role="header">
             <h1>Matt's Moving Planner</h1>
         </div>
 
+        <!--#3 Navigation Bar-->
+        <!--Links to other documents and their accompanying prefetch, and transition information. Lastly the link to SIU's main homepage.-->
+        <div data-role="navbar">
+            <ul>
+                <li><a href="instructions.htm" data-prefetch="true" data-transition="slidedown">Planning Instructions</a></li>
+                <li><a href="planner.htm" data-prefetch="true" data-transition="slideup">Planner</a></li>
+                <li><a href="contact.htm" data-prefetch="true" data-transition="flow">Contact Us</a></li>
+                <li><a href="about.htm" data-transition="pop">About Us</a></li>
+            </ul>
+        </div>
+
         <div role="main" class="ui-content">
             <p>    
-                <!--#6 & #7 Links to other documents and their accompanying prefetch, and transition information. Lastly the link to SIU's main homepage.-->
-                <a href="about.htm" data-transition="pop">About Us</a><br>
-                <a href="instructions.htm" data-prefetch="true" data-transition="slidedown">Planning Instructions</a><br>
-                <a href="planner.htm" data-prefetch="true" data-transition="slideup">Planner</a><br>
-                <a href="contact.htm" data-prefetch="true" data-transition="flow">Contact Us</a><br>
-                <a href="https://www.siu.edu">My Schools webpage</a>
+                Welcome to Matt's Moving Planner!<br>
+                The purpose of this web application is to help people move from one home to the next, with steps from general packing and supplies,
+                all the way to cleaning out the old apartment to ensure that you get your deposite back! This planner has been put together due to my 
+                own experiences and troubles when packing up and moving. Please let this application help you on your next steps once you have secured 
+                a new living situation!<br><br>
+
+                First priorities is to head over to the planning instructions page as this is the page which will house most of the tips and tricks
+                used throughout this application. Next you can move onto the moving supplies page as this will show a listing of what are the reccommended
+                 supplies when moving. Then there is the moving companies page which outlines nearby companies and what they can do for you when moving.
+                 Next there is the repairs and cleaning page which outlines the necissary repairs and cleaning steps for most users! Then there is the 
+                 utilities page which outlines what utilities may need to be disconnecter per apartment/home.
+                 Next we will look at.
             </p>
         </div>
 
+        <!--Footer for Fun-->
         <div data-role="footer">
             <p>
-                <i>Footer</i>
+                Matt's Moving Planner.<br>
+                <i><b><small>Makin Moving Easier Since 99!</small></b></i>
             </p>
         </div>
 

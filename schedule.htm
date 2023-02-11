@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <!--#4 Page Title, shows in browser as the tab name-->
+    <!--Page Title, shows in browser as the tab name-->
     <title>Schedule</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,27 +18,31 @@
 <body>
     <div data-role="page">
 
+        <!--#2 Header-->
         <div data-role="header">
             <h1>Schedule</h1>
+            <!--#3 Link to home document and its accompanying prefetch, and transition information-->
+            <a href="index.htm" data-icon="home" class="ui-btn-right">Home</a>
         </div>
 
         <div role="main" class="ui-content">
-            <p>
-                <!--#6 & #7 Links to other documents and their accompanying prefetch, and transition information-->
-                <a href="index.htm" target="_self"> Home</a><br>  
-                <a href="instructions.htm" data-prefetch="true" data-transition="pop">Planning Instructions</a><br>
-                <a href="supplies.htm" data-prefetch="true" data-transition="slide">Moving Supplies</a><br>
-                <a href="companies.htm" data-prefetch="true" data-transition="pop">Moving Companies</a><br>
-                <a href="repairs.htm" data-prefetch="true" data-transition="slidedown">Repairs and Cleaning</a><br>
-                <a href="notifications.htm" data-prefetch="true" data-transition="slideup">Notifications</a><br>
-                <a href="utilities.htm" data-prefetch="true" data-transition="fade">Utilities</a><br>       
+            <p>      
             </p>
         </div>
 
-        <div data-role="footer">
-            <p>
-                <i>Footer</i>
-            </p>
+        <!--#3 & 5 Navigation Footer-->
+        <div data-role="footer" data-position="fixed" data-id="footernav" data-theme="a">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="instructions.htm" data-prefetch="true" data-transition="slide"> Planning Instructions</a></li>
+                    <li><a href="supplies.htm" data-prefetch="true" data-transition="slide">Supplies</a><br></li>
+                    <li><a href="companies.htm" data-prefetch="true" data-transition="slide">Moving Companies</a><br></li>
+                    <li><a href="repairs.htm" data-prefetch="true" data-transition="slide">Repairs and Cleaning</a><br></li>
+                    <li><a href="notifications.htm" data-prefetch="true" data-transition="slide">Notifications</a><br></li>
+                    <li><a href="utilities.htm" data-prefetch="true" data-transition="slide">Utilities</a><br></li>
+                    <li><a href="schedule.htm" class="ui-btn-active">Schedual</a></li>
+                </ul>
+            </div>
         </div>
         
     </div>

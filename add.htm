@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <!--#4 Page Title, shows in browser as the tab name-->
+    <!--Page Title, shows in browser as the tab name-->
     <title>Add Item</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,22 +17,32 @@
 <body>
     <div data-role="page">
 
+        <!--#2 Header-->
         <div data-role="header">
             <h1>Add Items</h1>
+            <!--#3 Link to home document and its accompanying prefetch, and transition information-->
+            <a href="index.htm" data-icon="home" class="ui-btn-right">Home</a>
+        </div>
+
+        <!--#3 Navigation Bar-->
+        <div data-role="navbar">
+            <ul>
+                <li><a href="planner.htm" data-prefetch="true" data-transition="flip">Planner</a></li>
+                <li><a href="display.htm" data-prefetch="true" data-transition="flip">Display Items</a></li>
+                <li><a href="add.htm" class="ui-btn-active">Add Items</a><br></li>
+            </ul>
         </div>
 
         <div role="main" class="ui-content">
-            <p>     
-                <!--#6 & #7 Links to other documents and their accompanying prefetch, and transition information-->
-                <a href="index.htm"> Home</a><br> 
-                <a href="display.htm" data-prefetch="true" data-transition="pop">Display Items</a><br>
-                <a href="planner.htm" data-prefetch="true" data-transition="flow">Planner</a><br>      
+            <p>          
             </p>
         </div>
 
+        <!--Footer for Fun-->
         <div data-role="footer">
             <p>
-                <i>Footer</i>
+                Matt's Moving Planner.<br>
+                <i><b><small>Makin Moving Easier Since 99!</small></b></i>
             </p>
         </div>
         
