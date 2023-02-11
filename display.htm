@@ -2,10 +2,12 @@
 <html>
 
 <head>
+    <!--#4 Page Title, shows in browser as the tab name-->   
     <title>Display Items</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!--Link to jquery through google repository as the link to the jquery site is blocked by Github. Using the code.jquery site on github does not allow jquery.min to function.-->
     <link rel="stylesheet" href="js/jquery.mobile-1.4.5.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
@@ -16,12 +18,15 @@
     <div data-role="page">
 
         <div data-role="header">
-            <h1>Matt's Moving Planner</h1>
+            <h1>Display Items</h1>
         </div>
 
         <div role="main" class="ui-content">
-            <p>   
-                <a href="index.htm"> Home</a>.<br>        
+            <p> 
+                <!--#6 & #7 Links to other documents and their accompanying prefetch, and transition information-->  
+                <a href="index.htm"> Home</a><br>  
+                <a href="planner.htm" data-prefetch="true" data-transition="flow">Planner</a><br>
+                <a href="add.htm" data-prefetch="true" data-transition="slidefade">Add Items</a><br>       
             </p>
         </div>
 
