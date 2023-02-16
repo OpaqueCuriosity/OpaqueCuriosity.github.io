@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<!-- This page is devoted to showing the user which companies they will need to contact before they move-->
 <head>
     <!--Page Title, shows in browser as the tab name-->
     <title>Utilities</title>
@@ -18,19 +18,34 @@
 <body>
     <div data-role="page">
 
-        <!--#2 Header-->
+        <!--Header-->
         <div data-role="header">
             <h1>Utilities</h1>
-            <!--#3 Link to home document and its accompanying prefetch, and transition information-->
+            <!--Link to home document and its accompanying prefetch, and transition information-->
             <a href="index.htm" data-icon="home" class="ui-btn-right">Home</a>
         </div>
 
         <div role="main" class="ui-content">
-            <p>       
+            <p>   
+                <center><b><i>Please notify these companies of your move!</i></b><br>
+                <i>This is best to be done a month or more in advance!</i></center>
+                <!--#3 & 4 List of companies and dividers showing the necessity of contact-->
+                <ol data-role="listview" data-inset="true">
+                    <li data-role="list-divider">Main Utilities</li>
+                    <li>Cable Company</li>
+                    <li>Electricity Company</li>
+                    <li>Water/Sewage Company</li>
+                    <li>Waste Company</li>
+                    <li>Gas Company (if Applicable)</li>
+                    <li data-role="list-divider">Secondary Notices</li>
+                    <li>Mail Carrier (Please do this for the love of everything)</li>
+                    <li>Leasing Company (If Applicable)</li>
+                    <li></li>
+                </ol> 
             </p>
         </div>
 
-        <!--#3 & 5 Navigation Footer-->
+        <!--Navigation Footer-->
         <div data-role="footer" data-position="fixed" data-id="footernav" data-theme="a">
             <div data-role="navbar">
                 <ul>
