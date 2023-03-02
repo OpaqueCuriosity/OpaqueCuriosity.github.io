@@ -27,6 +27,33 @@
 
         <div role="main" class="ui-content">
             <p> 
+
+                <!-- #2 This is the basis of my input fields for a client to send in a question comment or concern to our customer
+                service team. The fields consist of standard lable fields and input types, as well as a textarea for inputing a lot of text-->
+                <center>Have any questions or would like to sudgest an edit? Please do so with this form! <br>
+                We only require your first name and email, as if it is a concern we would like to able to address it with you.<br></center>
+
+                <form action="echo.html" method="post">
+                <div class="ui-field-contain">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" value="" />
+                </div>
+
+                <div class="ui-field-contain">
+                    <label for="name">Email:</label>
+                    <input type="text" name="email" id="email" value="" />
+                </div>
+
+                <div class="ui-field-contain">
+                    <label for="name">Question, Comment, or Concern:</label>
+                    <textarea name="qcc" id="qcc"></textarea>
+                </div>
+                
+                <div class="ui-field-contain">
+                    <input type="submit" name="submit" value="Send" />
+                </div> 
+                </form>
+
             </p>
         </div>
 
