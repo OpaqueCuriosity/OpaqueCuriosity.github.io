@@ -73,14 +73,164 @@
     </div>
 
 
-
+    <div role="main" class="ui-content">
     <p>
-      somethingh
+      <h2>This page contains a rundown of what each page has and what it can do for you!</h2>
+      
+      <ul data-role="listview" data-inset="true">
+        <li data-role="list-divider">
+          Main
+        </li>
+
+        <li>
+          <b>Home:</b>
+          <br>&nbsp The home page is the main landing page of the web application and gives a general rundown of what this <br>
+          application is meant to be used for.
+        </li>
+
+        <li>
+          <b>News:</b>
+          <br>&nbsp The news page contains articles and information that is on release to BestBuy employees<br>
+          about information pertaining to their role within the company. This could be anything from information <br>
+          about new business plans and partnerships with other companies or something like a newsletter letting <br>
+          the employee know of bonuses to be expected this year.
+        </li>
+
+        <li>
+          <b>Help:</b>
+          <br>&nbsp This is a general navigation guru page to help the user get around the web application and <br>
+          will help them with navigation questions. This page will also feature a bug report option and allow the <br>
+          user to send in a report or ask a question.
+        </li>
+
+        <li>
+          <b>About:</b>
+          <br>&nbsp This is a general about page with a little bit of information on what the application is <br>
+          meant to do and why it was created. It also features a small section talking about me, the creator <br>
+          of the web application.
+        </li>
+
+        <li data-role="list-divider">
+          E-Learnign
+        </li>
+
+        <li>
+          <b>Learning Network:</b>
+          <br>&nbsp This is a landing page to send the user to the BestBuy Learning Network, an external tool to complete <br>
+          their certifications and also contains notices of items that need to be completed.
+        </li>
+
+        <li>
+          <b>Atlas:</b>
+          <br>&nbsp This is a landing page like the learning network page, but specific to Apple training for repairs made <br>
+          by Geek Squad and Apple specialists in the store. This page, like the Learning Network page, contains <br>
+          notices of eLearning’s to do and special training that may need to be completed.
+        </li>
+
+        <li>
+          <b>External Ceritificates:</b>
+          <br>&nbsp This page has external certifications for vendors that may only pertain to specific roles within <br>
+          a given store, such as those for the Pacific Sales, and Magnolia sections of a store.
+        </li>
+
+        <li data-role="list-divider">
+          Policies
+        </li>
+
+        <li>
+          <b>General Policies and Procedures:</b>
+          <br>&nbsp The general policies and procedures page features all of the documents that a sales representative might want to use and <br>
+          will show them what is most often used externally via link.
+        </li>
+        
+        <li>
+          <b>Management:</b>
+          <br>&nbsp This page is designed to give a general flow of who is in charge of what around the store and will <br>
+          be useful for employees to see who their supervisor is, who is above them and who they need to <br>
+          contact for each kind of issue. Each entry of a person on this page will also have a brief description <br>
+          of the supervisor’s role and what they have experience with.
+        </li>
+        
+        <li>
+          <b>Q&A:</b>
+          <br>&nbsp This page is in a list format describing common situations and what the correct course of action <br>
+          is depending on the scenario. This page will also allow for a user to submit a question for answering later.
+        </li>
+        
+        <li data-role="list-divider">
+          Emergency
+        </li>
+        
+        <li>
+          <b>Emergency Procedures:</b>
+          <br>&nbsp This page contains links to content describing policies in the case of emergency, including active shooters, <br>
+          robberies and the like. All the articles within this page will also be accessible through general policies <br>
+          and procedures but this page is more tailored to emergency situations.
+        </li>
+        
+        <li>
+          <b>Helpline:</b>
+          <br>&nbsp This page contains employee crisis help information including those to report harassment in the workplace, <br>
+          counseling options available to the employee, and other similar resources that the employee may need from <br>
+          time to time.
+        </li>
+      </ul>
+
     </p>
-    
+  </div>
+
+  <div rold="main" class="ui-content">
+    <h2>Bug Reporter!</h2>
+    <br><br>
+
+    <form action="echo2.html" method="post">
+      <div class="ui-field-contain">
+        <label for="issue">Issue?</label>
+        <input type="radio"
+      </div>
+      <div class="ui-field-contain">
+        <label for="anger">How bad is the issue?</label>
+        <input type="range" name="anger" id="anger"
+        min="0" max="10" value="5">
+      </div>
+      <div class="ui-field-contain">
+        <label for="page">What Page is the Issue on?</label>
+        <select name="page" id="page">
+        <option value="QA">Q & A</option>
+        <option value="index">Home</option>
+        <option value="News">News</option>
+        <option value="LearningNetwork">Learngin Network</option>
+        <option value="Atlas">Atlas</option>
+        <option value="ExternCerts">External Certicifcations</option>
+        <option value="GenPolicProc">General Policies and Procedures</option>
+        <option value="Management">Management Hirearchy</option>
+        <option value="EmergProc">Emergency Policies and Procedures</option>
+        <option value="HelpLine">HelpLine</option>
+        <option value="Help">Help</option>
+        <option value="About">About</option>
+        </select>
+       </div>
+      <div class="ui-field-contain">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" value="" />
+      </div>
+      <div class="ui-field-contain">
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" value="" />
+      </div>
+      <div class="ui-field-contain">
+        <label for="desc">Describe your Bug!</label>
+        <textarea name="desc" id="desc"></textarea>
+      </div>
+        <div class="ui-field-contain">
+        <input type="submit" name="submit" value="Send" />
+      </div> 
+    </form>
+
+  </div>
 
 
-        <!--Footer for Fun-->
+  <!--Footer for Fun-->
   <div data-role="footer">
     <p>
       <br>

@@ -157,3 +157,14 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.contentinhelp {
+  margin-left: .7em;
+}
+
+.image_helpline img {
+max-width: 10%;
+display: block;
+margin-right: auto;
+float: right;
+}
